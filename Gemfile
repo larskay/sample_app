@@ -4,9 +4,11 @@ ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.rc1'
 
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  gem 'guard-rspec'
 end
 
 # Use SCSS for stylesheets
@@ -40,10 +42,16 @@ group :development, :test do
 end
 group :test do
   gem 'capybara', '1.1.2'
+  gem 'libnotify', '0.5.9'
+  gem 'rb-inotify', '~> 0.9'
+  gem 'guard-spork', '0.3.2'
+  gem 'spork', '> 0.9.0'
 end
 group :production do
   gem 'pg', '0.15.1'
 end
+
+gem 'spork-rails', github: 'A-gen/spork-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
