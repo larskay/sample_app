@@ -10,6 +10,7 @@ gem 'bootstrap-sass', '2.0.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'guard-rspec'
+  gem 'annotate'
 end
 
 # Use SCSS for stylesheets
@@ -48,17 +49,17 @@ group :test do
   gem 'guard-spork', '0.3.2'
   gem 'spork', '> 0.9.0'
 end
-group :production do
-  gem 'pg', '0.15.1'
-end
+# group :production do
+#   gem 'pg', '0.15.1'
+# end
 
 gem 'spork-rails', github: 'A-gen/spork-rails'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+gem 'protected_attributes'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
