@@ -48,6 +48,7 @@ group :test do
   gem 'rb-inotify', '~> 0.9'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '> 0.9.0'
+  gem 'factory_girl_rails', '1.4.0'
 end
 # group :production do
 #   gem 'pg', '0.15.1'
@@ -59,7 +60,7 @@ gem 'bcrypt-ruby', '~> 3.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-gem 'protected_attributes'
+gem 'protected_attributes' 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
