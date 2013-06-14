@@ -50,9 +50,9 @@ group :test do
   gem 'spork', '> 0.9.0'
   gem 'factory_girl_rails', '1.4.0'
 end
-# group :production do
-#   gem 'pg', '0.15.1'
-# end
+group :production do
+  gem 'pg', '0.15.1'
+end
 
 gem 'spork-rails', github: 'A-gen/spork-rails'
 # Use ActiveModel has_secure_password
